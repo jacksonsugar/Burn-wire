@@ -14,6 +14,10 @@ Steps for deployment
 4) Import .zip libraries from repository into Arduino IDE 
 
       Sketch -> Include Library -> Add .ZIP Library..
+            
+            Low-Power-master.zip
+            
+            RTClib-master.zip
 
 5) Set programming device clock to UTC 
 
