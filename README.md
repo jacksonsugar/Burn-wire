@@ -4,7 +4,7 @@ Dependencies and code for a compact self-contained burn wire based on the Arduin
 Steps for deployment
 
 1) Download and install Arduino IDE from the official website:  https://www.arduino.cc/en/Main/Software
-2) Clone this repository to your device by following the green link above
+2) Clone this repository to your device by following the green link above [Download Zip]
 3) Open Adruino IDE and configure bootloader for the Arduino Nano 
 
       Tools -> Board: -> Arduino Nano
