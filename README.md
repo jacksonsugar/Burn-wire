@@ -19,7 +19,7 @@ Steps for deployment
             
             RTClib-master.zip
 
-5) Set programming device clock to UTC 
+5) Set laptop/desktop clock to UTC
 
 6) Connect burn wire to your device and upload DS-3231_set_time.ino to the controller
 
