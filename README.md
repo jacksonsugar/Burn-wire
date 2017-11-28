@@ -21,19 +21,23 @@ Steps for deployment
 
 5) Set laptop/desktop clock to UTC
 
-6) Connect burn wire to your device and upload DS-3231_set_time.ino to the controller
+6) Connect burn wire to your device and select the corresponding serial port
 
-7) Verify unix time is correct by opening the serial monitor in Arduino IDE 
+      Tools -> Port -> (device)
+
+7) Upload DS-3231_set_time.ino to the burn wire
+
+8) Verify unix time is correct by opening the serial monitor in Arduino IDE 
 
       Tools -> Serial Monitor
 
-8) Open Burn_wire_1.0.ino and set times for the burn cycle and strobe delay found in the first few lines of code
+9) Open Burn_wire_1.0.ino and set times for the burn cycle and strobe delay found in the first few lines of code
 
-9) Upload Burn_wire_1.0.ino to the burn wire and unplug from programming device
+10) Upload Burn_wire_1.0.ino to the burn wire and unplug from programming device
 
-10) Once ready to deploy, install shorting plug and cut off USB cable (making sure to seal off any exposed wire)
+11) Once ready to deploy, install shorting plug and cut off USB cable (making sure to seal off any exposed wire)
 
-11) Deploy!
+12) Deploy!
 
 NOTE: There is a known bug in the macOS distribution of Arduino IDE blocking the USB serial conneciton to the Arduino
 Follow this link to download and install Virtual COM Port Drivers
