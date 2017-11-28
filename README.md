@@ -25,7 +25,11 @@ Steps for deployment
 
       Tools -> Port -> (device)
 
-7) Upload DS-3231_set_time.ino to the burn wire
+7) From Burn-wire-master upload DS-3231_set_time.ino to the burn wire
+
+      File -> Open -> /Burn-wire-master/DS-3231_set_time/DS-3231_set_time.ino
+      
+      Sketch -> Upload
 
 8) Verify unix time is correct by opening the serial monitor in Arduino IDE 
 
@@ -40,5 +44,5 @@ Steps for deployment
 12) Deploy!
 
 NOTE: There is a known bug in the macOS distribution of Arduino IDE blocking the USB serial conneciton to the Arduino
-Follow this link to download and install Virtual COM Port Drivers
-(http://www.ftdichip.com/Drivers/VCP.htm)
+Follow this link to download and install Virtual COM Port Drivers for 
+(https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver)
