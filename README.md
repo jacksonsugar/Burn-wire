@@ -36,4 +36,5 @@ Steps for deployment
 11) Deploy!
 
 NOTE: There is a known bug in the macOS distribution of Arduino IDE blocking the USB serial conneciton to the Arduino
-Follow this Sparkfun link to fix (https://learn.sparkfun.com/tutorials/how-to-install-ftdi-drivers/mac)
+Follow this link to download and install Virtual COM Port Drivers
+(http://www.ftdichip.com/Drivers/VCP.htm)
