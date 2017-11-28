@@ -34,3 +34,6 @@ Steps for deployment
 10) Once ready to deploy, install shorting plug and cut off USB cable (making sure to seal off any exposed wire)
 
 11) Deploy!
+
+NOTE: There is a known bug in the macOS distribution of Arduino IDE blocking the USB serial conneciton to the Arduino
+Follow this Sparkfun link to fix (https://learn.sparkfun.com/tutorials/how-to-install-ftdi-drivers/mac)
