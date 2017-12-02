@@ -12,9 +12,9 @@ RTC_DS3231 rtc;
 
 //////////////////////////////////////////////////////////////////////////////////////
 //Set time to begin burn cycle
-const unsigned long burn = 1509814664;
+const unsigned long burn = ; //Input burn time (unix time)
 //Set length of burn cycle before strobe flash (in seconds)
-const unsigned long burnTime = 1200;
+const unsigned long burnTime = ;  //Input time of wire burning (1200 recommended)
 
 //////////////////////////////////////////////////////////////////////////////////////
 
@@ -86,7 +86,7 @@ if (now.unixtime() <= burn) {
     Serial.println();
     digitalWrite(BURN, LOW);
     digitalWrite(STROBE, LOW);
-    delay(10);
+    delay(100);
     
     for (int i = 1; i <= 15; i++){
       LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
