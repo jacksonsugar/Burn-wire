@@ -45,4 +45,4 @@ Steps for deployment
 
 NOTE: There is a known bug in the macOS distribution of Arduino IDE blocking the USB serial conneciton to the Arduino
 Follow this link to download and install Virtual COM Port Drivers for 
-(https://github.com/adrianmihalko/ch340g-ch34g-ch34x-mac-os-x-driver)
+(http://www.ftdichip.com/Drivers/VCP.htm)
