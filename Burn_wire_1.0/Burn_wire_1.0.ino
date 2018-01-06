@@ -6,17 +6,21 @@
 const int BURN = 2;
 const int STROBE = 3;
 unsigned long start;
+unsigned long burn;
 int i;
 
 RTC_DS3231 rtc;
 
 //////////////////////////////////////////////////////////////////////////////////////
 //Set time to begin burn cycle
-const unsigned long burn = ; //Input burn time (unix time)
+int days = 7;
+int h = 0;
+int m = 0;
+int s = 0;
 //Set length of burn cycle before strobe flash (in seconds)
-const unsigned long burnTime = ;  //Input time of wire burning (1200 recommended)
-
+const unsigned long burnTime = 0;  //Input time of wire burning before strobe (1200 recommended)
 //////////////////////////////////////////////////////////////////////////////////////
+const long deploy = (days * 86400)+ (h * 3600) + (60 * m) + s;
 
 
 void setup () {
@@ -42,7 +46,7 @@ digitalWrite(STROBE, LOW);
 //  rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
   DateTime now = rtc.now();
   start = now.unixtime();
-
+  burn = start + deploy;
   //Print clock reading + burn time
   Serial.print("Start time:  ");
   Serial.println(start);
@@ -58,6 +62,7 @@ digitalWrite(STROBE, LOW);
         Serial.print("flash ");
         Serial.println(j);
   }
+  Serial.println();
 }
 
 void loop () {
@@ -112,4 +117,3 @@ if (now.unixtime() <= burn) {
       }
     }
 }
-
