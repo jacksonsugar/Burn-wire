@@ -43,7 +43,7 @@ digitalWrite(STROBE, LOW);
   }
 
   //Set new time based on computer clock
-//  rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
+  rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
   DateTime now = rtc.now();
   start = now.unixtime();
   burn = start + deploy;
