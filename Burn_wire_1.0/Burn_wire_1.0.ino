@@ -13,7 +13,7 @@ RTC_DS3231 rtc;
 
 //////////////////////////////////////////////////////////////////////////////////////
 //Set time to begin burn cycle
-int days = 7;
+int days = 0;
 int h = 0;
 int m = 0;
 int s = 0;
