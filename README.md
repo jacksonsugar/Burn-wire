@@ -38,6 +38,7 @@ Steps for deployment
 9) Open Burn_wire_1.0.ino and set times for the burn cycle and strobe delay found in the first few lines of code seperated by the "/". Do not edit code outside the lines provided.
 
 10) Upload Burn_wire_1.0.ino to the burn wire and unplug from programming device
+      
       --> Note: Elapsed time programmed begins once shorting plug is installed. 
 
 11) Install shorting plug
