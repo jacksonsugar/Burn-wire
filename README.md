@@ -1,4 +1,4 @@
-# Burn-wire_1.0
+# Burn-wire_1.1
 Dependencies and code for a compact self-contained burn wire based on the Arduino Nano & DS3231 Real Time Clock
 
 Steps for deployment
@@ -35,14 +35,15 @@ Steps for deployment
 
       Tools -> Serial Monitor
 
-9) Open Burn_wire_1.0.ino and set times for the burn cycle and strobe delay found in the first few lines of code
+9) Open Burn_wire_1.0.ino and set times for the burn cycle and strobe delay found in the first few lines of code seperated by the "/". Do not edit code outside the lines provided.
 
 10) Upload Burn_wire_1.0.ino to the burn wire and unplug from programming device
+      --> Note: Elapsed time programmed begins once shorting plug is installed. 
 
-11) Once ready to deploy, install shorting plug and cut off USB cable (making sure to seal off any exposed wire)
+11) Install shorting plug
 
 12) Deploy!
 
-NOTE: There is a known bug in the macOS distribution of Arduino IDE blocking the USB serial conneciton to the Arduino
-Follow this link to download and install Virtual COM Port Drivers for 
+NOTE: There is a known issue with macOS blocking the USB serial conneciton to the Arduino or arduino clone
+Follow this link to download and install Virtual COM Port Drivers for macOS
 (http://www.ftdichip.com/Drivers/VCP.htm)
