@@ -19,7 +19,7 @@ Steps for deployment
             
             RTClib-master.zip
 
-5) Set laptop/desktop clock to UTC
+5) Set laptop/desktop clock to UTC should your application require it
 
 6) Connect burn wire to your device and select the corresponding serial port
 
